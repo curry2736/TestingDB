@@ -8,6 +8,7 @@ const index = require('./routes/index');
 const about = require('./routes/about');
 const tests = require('./routes/tests');
 const create = require('./routes/create');
+const submit = require('./routes/submit')
 
 const cookieParser = require('cookie-parser');
 //const flash = require('connect-flash');
@@ -46,6 +47,7 @@ app.use('/', index)
 app.use('/about', about)
 app.use('/tests', tests)
 app.use('/create', create)
+app.use('/submit', submit)
 
 db.on('error', error => {
     console.error(error)

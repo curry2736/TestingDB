@@ -4,6 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
 function addQuestions() {
   if (isNaN(document.getElementById("questionAmount").value)) {
     console.log("not a number")
